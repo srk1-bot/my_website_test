@@ -3,23 +3,75 @@ body {
     font-family: "Noto Serif JP", serif; 
 }
 
-h1 {
-    background: #0c4160;
+
+/* header ---------------------------------------- */
+header {
+  display: flex; /* フレックスボックスを使用 */
+  align-items: center; /* 縦方向の中央揃え */
+  justify-content: space-between; /* h1とulを左右に分ける */
+  width: 100%;
+  padding: 10px 10px 10px, 10px;
+  border-radius: 0 0 20px 20px; /* 角の丸み */
+  margin: 0 auto;
+  background: #0c4160;
+  /* border-bottom: 5px solid #8eb5ce; */
+  /* background: linear-gradient(to bottom, #c561f0,  #da2121, #e6d15a); */
+  box-shadow: 0px 10px 10px #e2e6e8;
+}
+
+/* h1のスタイル */
+header > h1 {
+  font-family: "Noto Serif JP", serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 10px; /* 不要なマージンを削除 */
+}
+
+/* ナビゲーションリストのスタイル */
+.nav-list {
+  display: flex; /* リストアイテムを横並びにする */
+  align-items: center; /* 縦方向の中央揃え */
+  padding: 0; /* 不要なパディングを削除 */
+  margin: 0; /* 不要なマージンを削除 */
+  list-style: none; /* リストのマーカーを削除 */
+}
+
+.nav-list-item {
+  margin: 0 20px; /* リストアイテムの左右の間隔 */
+}
+
+header > h1{
+  font-family: "Noto Serif JP", serif;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+header > ul, ol {
+  font-family: "Noto Serif JP", serif;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+
+/* body---------------------------------------- */
+
+body > h1 {
+    background: #aea885;
     border-radius :20px;/*角の丸み*/
-    box-shadow :0px 0px 5px #0c4160;/*5px=影の広がり具合*/
+    box-shadow :0px 0px 5px #aea885;
     padding: 0.5em 0.5em 0.5em 1em;
     font-family: "Noto Serif JP", serif;
     font-weight: bold;
     color: #ffffff;
 }
 
-p {
+body > p {
     font-family: "Noto Serif JP", serif; /* 段落用フォント */
     color: #0c4160;
     font-weight: bold;
 }
 
-ul, ol {
+body > ul, ol {
     background: #ffffff;
     border-radius :20px;/*角の丸み*/
     box-shadow :0px 0px 10px #e2e6e8;/*5px=影の広がり具合*/
@@ -34,6 +86,49 @@ ul, ol {
     padding: 1em ;
   }
 
+/* fotter--------------------------------------------- */
+footer {
+  width: 100%;
+  padding: 20px;
+  background: #0c4160;
+  border-top: 10px solid #8eb5ce;
+  /* background: linear-gradient(to bottom, #c561f0,  #da2121, #e6d15a); */
+  color: #ffffff; /* テキスト色 */
+  text-align: center; /* テキストの中央揃え */
+  /* border-top: 2px solid #0c4160; */
+}
 
+/* フッター内のコンテンツ */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto; /* 中央揃え */
+  display: flex;
+  flex-direction: column; /* スマホでも縦並び */
+  align-items: center;
+}
+
+/* リンクリスト */
+.footer-links {
+  list-style: none; /* リストマーカーを消す */
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex; /* 横並びにする */
+}
+
+.footer-links li {
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none; /* 下線を消す */
+  font-weight: bold;
+  transition: color 0.3s; /* ホバー時のアニメーション */
+}
+
+
+.footer-links a:hover {
+  color: #aea885; /* ホバー時のリンク色 */
+}
 /* ["0a1944", "3c4f6d", "a5b5c4", "d9d8dd", "ff0000"] */
 /* ["e2e6e8", "c1c3be", "545b5c", "0c4160", "aea885"] --> */
