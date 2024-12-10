@@ -1,0 +1,39 @@
+.title { color: #2b8585; }
+body {
+    font-family: "Noto Serif JP", serif; 
+}
+
+h1 {
+    background: #0c4160;
+    border-radius :20px;/*角の丸み*/
+    box-shadow :0px 0px 5px #0c4160;/*5px=影の広がり具合*/
+    padding: 0.5em 0.5em 0.5em 1em;
+    font-family: "Noto Serif JP", serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+p {
+    font-family: "Noto Serif JP", serif; /* 段落用フォント */
+    color: #0c4160;
+    font-weight: bold;
+}
+
+ul, ol {
+    background: #ffffff;
+    border-radius :20px;/*角の丸み*/
+    box-shadow :0px 0px 10px #e2e6e8;/*5px=影の広がり具合*/
+    padding: 0.5em 0.5em 0.5em 2.em;
+    margin-left: 1em;
+    font-family: "Noto Serif JP", serif;
+    font-weight: bold;
+    color: #0c4160;
+  }
+  ul li, ol li {
+    line-height: 1.5;
+    padding: 1em ;
+  }
+
+
+/* ["0a1944", "3c4f6d", "a5b5c4", "d9d8dd", "ff0000"] */
+/* ["e2e6e8", "c1c3be", "545b5c", "0c4160", "aea885"] --> */
