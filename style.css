@@ -20,24 +20,24 @@ body {
 }
 .box-h1{
   padding: 0px 0px 0px 10px;
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
   color: #0c4160;
 }
 
 .box-ul{
-  padding: 1em 0.5em 0.5em 2em;
+  padding: 1em 0.1em 0.5em 1em;
   margin-left: 1em;
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
   color: #0c4160;
 }
 .box-li{
-  padding: 0em 0em 1.5em 1.2em;
+  padding: 10px 1px 1px 1px;
 }
 .box-p{
-  padding: 1px 10px;
-  font-family: "Noto Sans JP", serif;
+  padding: 10px 10px;
+  font-family: "Noto Sans JP", sans-serif;
   color: #0c4160;
   font-weight: bold;
 }
@@ -55,14 +55,14 @@ header{
 }
 
 header > h1{
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: normal;
   font-size: 30px; 
   padding-left: 20px;
 }
 
 header > ul, ol {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: normal;
   color: #ffffff;
 }
@@ -119,8 +119,14 @@ footer{
 }
 
 
-a {
+header  a {
   color: #ffffff; /* リンクの文字色を設定 */
+  text-decoration: none; /* 下線を消す */
+}
+
+
+.box  a {
+  color: #0c4160; /* リンクの文字色を設定 */
   text-decoration: none; /* 下線を消す */
 }
 
@@ -129,8 +135,17 @@ a:hover {
   transition: color 0.3s;
 }
 
-a:visited {
+
+header a:visited {
   color: #ffffff; /* 訪問済みリンクの文字色 */
+}
+
+.box a:visited {
+  color: #0c4160; /* 訪問済みリンクの文字色 */
+}
+
+a:visited:hover {
+  color: #aea885; /* 訪問済みリンクのホバー時の文字色 */
 }
 
 a:active {
