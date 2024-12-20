@@ -130,6 +130,15 @@ header  a {
   text-decoration: none; /* 下線を消す */
 }
 
+.box img {
+  display: flex;
+  align-items: center;
+  margin: 10px 10px 0px 10px;
+  width: 95%; /* 親要素の幅に合わせる */
+  height: auto; /* アスペクト比を維持する */
+  border-radius: 20px; /* 角を丸くする */
+}
+
 a:hover {
   color: #aea885; /* ホバー時の文字色を設定 */
   transition: color 0.3s;
@@ -188,6 +197,6 @@ a:active {
   color: #fff;
   display: flex;
   align-items: center;
-  font-size: 13vw;
+  font-size: 8vh;
   font-weight: bold;
 }
